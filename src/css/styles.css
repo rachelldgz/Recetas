@@ -1,0 +1,16 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .header {
+    margin: 10px 10px 0 30px;
+    font-size: 0;
+    line-height: 45%;
+  }
+  
