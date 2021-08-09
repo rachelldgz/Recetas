@@ -1,5 +1,5 @@
 # Recetas
-## Equipo 13
+### Equipo 13_
 ![App Preview](./preview/vistaPrincipal.jpg?raw=true)
 <!-- ![vistaPrincipal](https://user-images.githubusercontent.com/62523509/128751982-a00a450f-8925-4b39-8702-2af52ae93315.jpg) -->
 
