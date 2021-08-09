@@ -1,9 +1,15 @@
 # Recetas
 ### Equipo 13
+
+## Mockups de la página web
+### Landing page
 ![App Preview](./preview/vistaPrincipal.jpg?raw=true)
 <!-- ![vistaPrincipal](https://user-images.githubusercontent.com/62523509/128751982-a00a450f-8925-4b39-8702-2af52ae93315.jpg) -->
 
-## 📋 1. Especificaciones del proyecto
+### Modal
+![App Preview](./preview/vistaModal.jpg?raw=true)
+
+## 📋 Especificaciones del proyecto
 
 _Desarrollo de una página web para buscar recetas_
 
