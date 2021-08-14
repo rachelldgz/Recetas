@@ -3,14 +3,39 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
     background-color: rgb(255, 255, 255);
   }
-  
-  .header {
-    margin: 10px 10px 0 30px;
+
+ .header {
+    display: flex;
+    margin: 0 10px 0 30px;
     font-size: 0;
     line-height: 45%;
-  }
-  
+    justify-content: center;
+    align-items: center;
+ }
+
+.title {
+    font-family: 'Lily Script One', cursive;
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+}
+header {
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/img/header.jpg");
+    height: 500px;
+    width: 100%;
+}
+
+
+@media (max-width: 460px) {
+    .title {
+        font-size: 48px;
+    }
+}
