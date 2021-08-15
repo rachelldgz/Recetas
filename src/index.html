@@ -1,152 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
     <title>Recetas</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header">
-            <h1 class="title">Las mejores recetas a tu alcance</h1>
-        </div>
+      <div class="header">
+        <h1 class="title">Las mejores recetas a tu alcance</h1>
+      </div>
     </header>
 
     <div class="container">
-        <div class="meal-search-box">
-            <input type="text" class="search-control" placeholder="Búsqueda por receta" id="search-input">
-            <button type="submit" class="btn btn-danger" id="btn-search">Buscar</button>
-            <button type="submit" class="btn btn-outline-danger" id="btn-random">Aleatorio</button>
-            <!-- <button class="btn btn-search" id="btn-search" type="submit">Buscar</button>
+      <div class="meal-search-box">
+        <input
+          type="text"
+          class="search-control"
+          placeholder="Búsqueda por receta"
+          id="search-input"
+        />
+        <button type="submit" class="btn btn-danger" id="btn-search">
+          Buscar
+        </button>
+        <button type="submit" class="btn btn-outline-danger" id="btn-random">
+          Aleatorio
+        </button>
+        <!-- <button class="btn btn-search" id="btn-search" type="submit">Buscar</button>
                 <button class="btn btn-random ms-3" id="btn-random" type="submit">Aleatorio</button> -->
-        </div>
+      </div>
     </div>
 
     <div class="card-deck">
-        <div class="col mb-4">
-            <div id="meal">
-                <!-- <div class="card">
-                <img class="imagen-comida" id="papas" alt="imagen_comida">
-                <div class="card-body">
-                    <h5 class="card-title">NOMBRE COMIDA</h5>
-                </div>
-                <div class="card-footer">
-                    <p class="card-text" id="getMeal"><small class="text-muted"> <a href=""> Get Recipe →</a></small>
-                    </p>
-                </div>
+      <div class="col mb-4">
+        <div id="meal">
+          <div class="card">
+            <img class="imagen-comida" id="papas" alt="imagen_comida" />
+            <div class="card-body">
+              <h5 class="card-title">NOMBRE COMIDA</h5>
             </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card">
-                <img class="imagen-comida" id="papas" alt="imagen_comida">
-                <div class="card-body">
-                    <h5 class="card-title">NOMBRE COMIDA</h5>
-                </div>
-                <div class="card-footer">
-                    <p class="card-text"><small class="text-muted"> <a href=""> Get Recipe →</a></small></p>
-                </div>
+            <div class="card-footer">
+              <p class="card-text" id="getMeal">
+                <small class="text-muted"> <a href="" id="modal-btn" data-bs-toggle="modal" data-bs-target="#myModal"> Get Recipe →</a></small>
+              </p>
             </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card">
-                <img class="imagen-comida" id="papas" alt="imagen_comida">
-                <div class="card-body">
-                    <h5 class="card-title">NOMBRE COMIDA</h5>
-                </div>
-                <div class="card-footer">
-                    <p class="card-text"><small class="text-muted"> <a href=""> Get Recipe →</a></small></p>
-                </div>
-            </div>-->
-            </div>
-        </div>
-    </div>
-
-      <!-- ---Empieza Modal--- -->
-
-    <!-- Boton para abrir modal -->
-    <div class="container mt-5">
-        <button
-          id="modal-btn"
-          type="button"
-          class="btn btn-dark"
-          data-bs-toggle="modal"
-          data-bs-target="#myModal"
-        >
-          Ver Receta
-        </button>
-      </div>
-  
-      <!-- Contenido del modal -->
-  
-      <div id="myModal" class="modal fade">
-        <div class="modal-dialog modal-dialog-scrollable modal-lg">
-          <div class="close-btn-container">
-            <span class="close" data-bs-dismiss="modal">&times;</span>
           </div>
-  
-          <div
-            class="card modal-card-container"
-            style="width: 52rem; border-radius: 15px"
-          >
-            <img
-              src="./assets/img/modal_mock.png"
-              class="card-img-top modal-img"
-              alt="..."
-              style="border-radius: 15px"
-            />
-  
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img class="imagen-comida" id="papas" alt="imagen_comida" />
             <div class="card-body">
-              <h5 class="card-title">Nombre del platillo</h5>
+              <h5 class="card-title">NOMBRE COMIDA</h5>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <h5 class="card-title">Ingredientes</h5>
-              </li>
-              <li class="list-group-item">Ingrediente 1</li>
-              <li class="list-group-item">Ingrediente 2</li>
-              <li class="list-group-item">Ingrediente 3</li>
-              <li class="list-group-item">Ingrediente 4</li>
-              <li class="list-group-item">Ingrediente 5</li>
-            </ul>
-            <div class="card-body">
-              <h5 class="card-title">Instrucciones</h5>
+            <div class="card-footer">
               <p class="card-text">
-                Descripción rápida del platillo de cual se muestra la receta
+                <small class="text-muted"> <a href="" id="modal-btn" data-bs-toggle="modal" data-bs-target="#myModal"> Get Recipe →</a></small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img class="imagen-comida" id="papas" alt="imagen_comida" />
+            <div class="card-body">
+              <h5 class="card-title">NOMBRE COMIDA</h5>
+            </div>
+            <div class="card-footer">
+              <p class="card-text">
+                <small class="text-muted"> <a href="" id="modal-btn" data-bs-toggle="modal" data-bs-target="#myModal"> Get Recipe →</a></small>
               </p>
             </div>
           </div>
         </div>
       </div>
-  
-      <!-- ---Termina Modal--- -->
+    </div>
 
+    <!-- ---Empieza Modal--- -->
+
+    <!-- Contenido del modal -->
+
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="close-btn-container">
+          <span class="close" data-bs-dismiss="modal">&times;</span>
+        </div>
+
+        <div
+          class="card modal-card-container"
+          style="width: 52rem; border-radius: 15px"
+        >
+          <img
+            src="./assets/img/modal_mock.png"
+            class="card-img-top modal-img"
+            alt="..."
+            style="border-radius: 15px"
+          />
+
+          <div class="card-body">
+            <h5 class="card-title">Nombre del platillo</h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <h5 class="card-title">Ingredientes</h5>
+            </li>
+            <li class="list-group-item">Ingrediente 1</li>
+            <li class="list-group-item">Ingrediente 2</li>
+            <li class="list-group-item">Ingrediente 3</li>
+            <li class="list-group-item">Ingrediente 4</li>
+            <li class="list-group-item">Ingrediente 5</li>
+          </ul>
+          <div class="card-body">
+            <h5 class="card-title">Instrucciones</h5>
+            <p class="card-text">
+              Descripción rápida del platillo de cual se muestra la receta
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---Termina Modal--- -->
 
     <footer class="d-flex flex-column">
-        <div class="integers container d-flex justify-content-between">
-            <div>
-                <p class="">Karla Flores Valona</p>
-                <p class="">Jorge Alberto Gomez Gomez</p>
-                <p class="">Jessica Astrid Ortega Murillo</p>
-                <p class="">Martha Rachell Gozcon Domínguez</p>
-                <p class="">Brian Gibran Godoy Lomelí</p>
-            </div>
-            <a href="https://github.com/rachelldgz/Recetas" class="footerImg align-self-center"></a>
+      <div class="integers container d-flex justify-content-between">
+        <div>
+          <p class="">Karla Flores Valona</p>
+          <p class="">Jorge Alberto Gomez Gomez</p>
+          <p class="">Jessica Astrid Ortega Murillo</p>
+          <p class="">Martha Rachell Gozcon Domínguez</p>
+          <p class="">Brian Gibran Godoy Lomelí</p>
         </div>
-        <div class="copyright align-self-center">
-            <p>© 2021 Equipo13. Todos los derechos reservados</p>
-        </div>
+        <a
+          href="https://github.com/rachelldgz/Recetas"
+          class="footerImg align-self-center"
+        ></a>
+      </div>
+      <div class="copyright align-self-center">
+        <p>© 2021 Equipo13. Todos los derechos reservados</p>
+      </div>
     </footer>
 
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
