@@ -129,7 +129,40 @@ header {
     text-decoration: none;
 }
 
+/* Modal classes */
 
+.modal-card-container {
+    padding: 32px;
+  }
+  
+  #ourModal{
+      display: none;
+      position: fixed;
+      z-index: 1;
+  
+  }
+  
+  .close-btn-container{
+    border-style: none;
+    width: 54rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: flex-end;
+  }
+  .close {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 52px;
+    height: 52px;
+    transition: 0.3s;
+    font-size: 40px;
+    background-color: #FFFFFF;;
+    border-radius: 50%;
+    border-style: none;
+  }
 /* Footer classes */
 footer {
     margin-top: auto;
