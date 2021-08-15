@@ -144,9 +144,9 @@ header {
   
   .close-btn-container{
     border-style: none;
-    width: 54rem;
+    width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 5px;
     display: flex;
     flex-shrink: 0;
     justify-content: flex-end;
@@ -155,10 +155,10 @@ header {
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 52px;
-    height: 52px;
+    width: 30px;
+    height: 30px;
     transition: 0.3s;
-    font-size: 40px;
+    font-size: 20px;
     background-color: #FFFFFF;;
     border-radius: 50%;
     border-style: none;
