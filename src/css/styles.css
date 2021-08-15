@@ -82,11 +82,6 @@ footer {
   margin: 0;
 }
 
-@media (max-width: 460px) {
-  .title {
-    font-size: 48px;
-  }
-
 .meal-search-box {
     margin: 100px;
     display: flex;
