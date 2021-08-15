@@ -25,6 +25,65 @@
             </div>
         </div>
 
+         <!-- ---Empieza Modal--- -->
+
+    <!-- Boton para abrir modal -->
+    <div class="container mt-5">
+        <button
+          id="modal-btn"
+          type="button"
+          class="btn btn-dark"
+          data-bs-toggle="modal"
+          data-bs-target="#myModal"
+        >
+          Ver Receta
+        </button>
+      </div>
+  
+      <!-- Contenido del modal -->
+  
+      <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+          <div class="close-btn-container">
+            <span class="close" data-bs-dismiss="modal">&times;</span>
+          </div>
+  
+          <div
+            class="card modal-card-container"
+            style="width: 52rem; border-radius: 15px"
+          >
+            <img
+              src="./assets/img/modal_mock.png"
+              class="card-img-top modal-img"
+              alt="..."
+              style="border-radius: 15px"
+            />
+  
+            <div class="card-body">
+              <h5 class="card-title">Nombre del platillo</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <h5 class="card-title">Ingredientes</h5>
+              </li>
+              <li class="list-group-item">Ingrediente 1</li>
+              <li class="list-group-item">Ingrediente 2</li>
+              <li class="list-group-item">Ingrediente 3</li>
+              <li class="list-group-item">Ingrediente 4</li>
+              <li class="list-group-item">Ingrediente 5</li>
+            </ul>
+            <div class="card-body">
+              <h5 class="card-title">Instrucciones</h5>
+              <p class="card-text">
+                Descripción rápida del platillo de cual se muestra la receta
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- ---Termina Modal--- -->
+
         <footer class="d-flex flex-column">
             <div class="integers container d-flex justify-content-between">
                 <div>
@@ -42,5 +101,6 @@
         </footer>
 
         <script src="assets/vendors/bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="./js/index.js"></script>
     </body>
 </html>
