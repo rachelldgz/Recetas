@@ -23,6 +23,7 @@ _Desarrollo de una página web para buscar recetas_
 
 _⚙️ Herramientas empleadas:_
 
+* [Bootstrap v.5](https://getbootstrap.com/) - Utilización de componentes de Bootstrap para CSS, mostrando un diseño responsive.
 * [Node.js](https://nodejs.dev/) - Hace referencia al entorno de ejecución de JavaScript utilizado.
 * [Webpack](https://webpack.js.org/) - Paquete de módulos estáticos para aplicaciones JavaScript.
 * [Babel](https://babeljs.io/) - Herramienta que permite transformar código ECMA6+ a un código de Javascript que cualquier navegador o versión de Node.js pueda entender.
