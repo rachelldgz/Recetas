@@ -28,7 +28,12 @@ body {
   color: white;
   text-align: center;
   /* margin-top: 200px; */
+  
+:root {
+    --primary: #DB3A3A;
+    --primary-dark: #D41A1A;
 }
+
 header {
   object-fit: cover;
   background-position: center;
@@ -80,4 +85,62 @@ footer {
   .title {
     font-size: 48px;
   }
+
+.meal-search-box {
+    margin: 100px;
+    display: flex;
+    align-items: stretch;
+ }
+
+.search-control {
+    width: 100%;
+}
+
+.search-control {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    padding: 0 0 0 .5rem;
+    outline: 0;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.search-control::placeholder {
+    color: var(--primary);
+}
+
+#btn-search {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    border-radius: 0 8px 8px 0;
+    width: 25%;
+    height: 55px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    transition: all 0.4s linear;
+}
+#btn-search:hover {
+    background: var(--primary);
+    color: white;
+}
+#btn-search:focus, #btn-search:active:focus {
+    outline: 0 !important;
+}
+#btn-random {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: var(--primary);
+    outline: 1px solid var(--primary);
+    border-radius: 8px;
+    width: 25%;
+}
+
+
+@media (max-width: 460px) {
+    .title {
+        font-size: 32px;
+    }
 }
