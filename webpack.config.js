@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/js/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -31,6 +31,11 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|jpeg|gif|eot|ttf|woff|woff2)$/i,
                 type: "asset/resource",
+            },
+            {
+                test: /\.js$/,
+                enforce: 'pre',
+                use: ['source-map-loader'],
             },
         ]
     },
