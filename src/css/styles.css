@@ -30,7 +30,7 @@ body {
 }
 
 :root {
-    --primary: #DB3A3A;
+    --primary: #db3a3a;
     --primary-dark: #641919;
 }
 
@@ -42,7 +42,6 @@ header {
     height: 300px;
     width: 100%;
 }
-
 
 .meal-search-box {
     margin: 60px auto 60px auto;
@@ -56,9 +55,9 @@ header {
 }
 
 .search-control {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 24px;
-    padding: 0 0 0 .5rem;
+    padding: 0 0 0 0.5rem;
     outline: 0;
     border: 1px solid var(--primary);
     color: var(--primary);
@@ -71,16 +70,15 @@ header {
 }
 
 #btn-search {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 24px;
     border-radius: 0 8px 8px 0;
     width: 25%;
     /* height: 55px; */
 }
 
-
 #btn-random {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 24px;
     border-radius: 8px;
     /* width: 25%; */
@@ -90,7 +88,6 @@ header {
 .card-deck {
     padding: 5%;
     text-align: center;
-
 }
 
 #meal {
@@ -101,8 +98,11 @@ header {
 }
 
 .imagen-comida {
-    padding: 10px;
-    border-radius: 15px;
+    padding: 0.5rem;
+}
+
+.my-rounded {
+    border-radius: 1rem!important;
 }
 
 .card-body {
@@ -126,6 +126,40 @@ header {
     text-decoration: none;
 }
 
+/* Modal classes */
+
+.modal-card-container {
+    padding: 32px;
+}
+
+#ourModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+}
+
+.close-btn-container {
+    border-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 5px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: flex-end;
+}
+
+.close {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+    font-size: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border-style: none;
+}
 
 
 /* Footer classes */
