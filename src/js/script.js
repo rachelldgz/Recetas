@@ -104,8 +104,8 @@ function setResultNotFound() {
 
 function divMeal(meal) {
     return `
-                 <div class="card shadow p-4 bg-white rounded"  id="${meal.idMeal}">
-                         <img class="imagen-comida" src ="${meal.strMealThumb}" alt="imagen_comida">
+                 <div class="card shadow p-4 bg-white my-rounded "  id="${meal.idMeal}">
+                         <img class="imagen-comida my-rounded " src ="${meal.strMealThumb}" alt="imagen_comida">
                        <div class="card-body">
                             <h5 class="card-title">${meal.strMeal}</h5>
                   </div>

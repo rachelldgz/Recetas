@@ -102,7 +102,11 @@ header {
 }
 
 .imagen-comida {
-    padding: 2rem;
+    padding: 0.5rem;
+}
+
+.my-rounded {
+    border-radius: 1rem!important;
 }
 
 .card-body {
