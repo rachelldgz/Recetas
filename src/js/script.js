@@ -37,7 +37,7 @@ function divMeal(meal) {
         <div class="card-footer">
             <p class="card-text" id="getMeal">
                 <small class="text-muted"> <a href="" id="modal-btn" data-bs-toggle="modal"
-                    data-bs-target="#myModal"> Get Recipe →</a></small> </p>
+                    data-bs-target="#myModal"> Ver Receta →</a></small> </p>
         </div>
     </div>
     `
