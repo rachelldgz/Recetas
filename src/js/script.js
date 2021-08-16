@@ -154,3 +154,5 @@ function getMealList() {
 function getRandomMeallist() {
     callApi(`https://www.themealdb.com/api/json/v1/1/random.php`)
 }
+
+callApi(`https://www.themealdb.com/api/json/v2/1/randomselection.php`)
