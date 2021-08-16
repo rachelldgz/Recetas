@@ -17,13 +17,13 @@ function setMessageError(error) {
     mealList.classList.add('error');
     switch (error) {
         case 'NotFound':
-            mealList.innerHTML = "Sorry, we didn't find any meal!";
+            mealList.innerHTML = "¡Lo sentimos. No se encontró receta para tu búsqueda!";
             break;
         case 'Empty':
-            mealList.innerHTML = "Sorry, you need enter the name of an ingredient!";
+            mealList.innerHTML = "Es necesario que ingreses un ingrediente para buscar";
             break;
         default:
-            mealList.innerHTML = "Sorry, our system is shut down, try again more later"
+            mealList.innerHTML = "Lo sentimos, el servdor no funciona por el momento. Intenta de nuevo más tarde."
     }
 }
 
