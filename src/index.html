@@ -22,7 +22,7 @@
 
     <div class="container">
         <div class="meal-search-box">
-            <input type="text" class="search-control" placeholder="Búsqueda por receta" id="search-input" />
+            <input type="text" class="search-control" placeholder="Search by ingredient" id="search-input" />
             <button type="submit" class="btn btn-danger" id="btn-search">
                 Buscar
             </button>
@@ -50,28 +50,22 @@
                 <span class="close" data-bs-dismiss="modal">&times;</span>
             </div>
 
-            <div class="card modal-card-container" style="border-radius: 15px">
+            <div class="card modal-card-container" style="border-radius: 15px;">
                 <img src="" class="card-img-top modal-img" alt="..." style="border-radius: 15px" />
 
                 <div class="card-body">
-                    <h4 class="card-title">Nombre del platillo</h4>
+                    <h4 class="card-title"></h4>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item" id="ingredients">
-                        <h5 class="card-title">Ingredientes</h5>
-                    </li>
-                    <li class="list-group-item">Ingrediente 1</li>
-                    <li class="list-group-item">Ingrediente 2</li>
-                    <li class="list-group-item">Ingrediente 3</li>
-                    <li class="list-group-item">Ingrediente 4</li>
-                    <li class="list-group-item">Ingrediente 5</li>
-                    <li class="list-group-item">
-                        <h5 class="card-title">Instrucciones</h5>
+                <div class="card-body">
+                    <h4 class="card-title" style="font-style: bold;"></h4>
+                </div>
+                <ul class="list-group list-group-flush" style="border-radius: 15px;">
+                    <li class="list-group-item" id="ingredients">    
                     </li>
                 </ul>
                 <div class="card-body">
+                    <h4 class="card-title" style="font-style: bold;"></h4>
                     <p class="card-text">
-                        Descripción rápida del platillo de cual se muestra la receta
                     </p>
                 </div>
             </div>
