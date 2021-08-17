@@ -101,11 +101,11 @@ function getMealRecipe(e) {
   }
 }
 
-function ingredientAppend(ingredients) {
+function ingredientAppend(ingredients, measures) {
   let completeHtml = "";
   for (let i = 0; i < ingredients.length; i++) {
     let html = `
-        <li class="list-group-item">${ingredients[i]}</li>
+        <li class="list-group-item">${measures[i]} - ${ingredients[i]}</li>
         `;
     completeHtml = completeHtml + html;
   }
@@ -116,10 +116,15 @@ function mealModal(meal) {
   console.log(meal);
   meal = meal[0];
   let ingredients = [];
+  let measures = []
   for (let i = 0; i < 20; i++) {
     let text = `strIngredient${i + 1}`;
     ingredients[i] = meal[text];
+    let measureText = `strMeasure${i + 1}`;
+    measures[i] = meal[measureText];
     if (!ingredients[i]) {
+      ingredients.pop()
+      measures.pop()
       break;
     }
   }
@@ -138,9 +143,9 @@ function mealModal(meal) {
         style="border-radius: 15px; 
                 max-width: 60% ; 
                 align-self: center; 
-                box-shadow: 12px 11px 21px -2px rgba(0,0,0,0.67);
-                -webkit-box-shadow: 12px 11px 21px -2px rgba(0,0,0,0.67);
-                -moz-box-shadow: 12px 11px 21px -2px rgba(0,0,0,0.67);"
+                // box-shadow: 12px 11px 21px -2px rgba(0,0,0,0.67);
+                // -webkit-box-shadow: 12px 11px 21px -2px rgba(0,0,0,0.67);
+                // -moz-box-shadow: 12px 11px 21px -2px rgba(0,0,0,0.67);"
         />
 
         <div class="card-body">
@@ -152,7 +157,7 @@ function mealModal(meal) {
         <div class="card-body">
             <ul class="list-group list-group-flush bg-danger" style="border-radius: 15px;">
                 <li class="list-group-item" id="ingredients">    
-                    ${ingredientAppend(ingredients)}
+                    ${ingredientAppend(ingredients, measures)}
                 </li>
             </ul>
         </div>
