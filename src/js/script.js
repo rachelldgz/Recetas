@@ -105,7 +105,7 @@ function ingredientAppend(ingredients, measures) {
   let completeHtml = "";
   for (let i = 0; i < ingredients.length; i++) {
     let html = `
-        <li class="list-group-item">${measures[i]} - ${ingredients[i]}</li>
+        <li class="list-group-item">${ingredients[i]} - ${measures[i]}</li>
         `;
     completeHtml = completeHtml + html;
   }
@@ -151,7 +151,7 @@ function mealModal(meal) {
         <div class="card-body">
             <h4 class="card-title text-center" style="text-transform: uppercase;">${meal.strMeal}</h4>
         </div>
-        <div class="card-body">
+        <div class="card-body pb-0">
             <h4 class="card-title" style="font-style: bold;">Ingredients</h4>
         </div>
         <div class="card-body">
@@ -162,7 +162,7 @@ function mealModal(meal) {
             </ul>
         </div>
         <div class="card-body">
-            <h4 class="card-title" style="font-style: bold;">Instructions</h4>
+            <h4 class="card-title mb-4" style="font-style: bold;">Instructions</h4>
             <p class="card-text" style="text-align: justify;">
                 ${meal.strInstructions}
             </p>
