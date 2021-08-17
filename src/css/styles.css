@@ -138,6 +138,10 @@ header {
     z-index: 1;
 }
 
+.bg-custom-1 {
+    background-color: #f05050;
+}
+
 .close-btn-container {
     border-style: none;
     width: 100%;
