@@ -13,7 +13,7 @@ module.exports = {
             filename: 'index.html',
             template: './src/index.html'
         }),
-        new FaviconsWebpackPlugin('./src/favicon.ico')
+        new FaviconsWebpackPlugin('./src/assets/img/favicon.ico')
     ],
     module: {
         rules: [{
